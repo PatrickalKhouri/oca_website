@@ -7,30 +7,31 @@
     <%= f.input :first_name,
                 required: true,
                 autofocus: true,  
-                input_html: { autocomplete: "nome" }%>
+                label: 'Nome' %>
     <%= f.input :last_name,
                 required: true,  
-                input_html: { autocomplete: "sobrenome" }%>
+                label: 'Sobrenome'%>
     <%= f.input :gender,
-                required: true,  
-                input_html: { autocomplete: "genero" }%>
+                required: true,
+                collection: ["Masculino", "Feminino", "Outro"],
+                label: 'Gênero'%>
     <%= f.input :phone,
                 required: true,  
-                input_html: { autocomplete: "genero" }%> 
+                label: 'Telefone'%> 
     <%= f.input :email,
                 required: true,
                 input_html: { autocomplete: "email" }%>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                label: 'Senha' %>
     <%= f.input :password_confirmation,
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                label: 'Confirmação de Senha'%>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Registrar-se" %>
   </div>
 <% end %>
 
