@@ -10,10 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_27_171228) do
+ActiveRecord::Schema.define(version: 2020_10_27_213945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "condominia", force: :cascade do |t|
+    t.bigint "neighbourhood_id", null: false
+    t.string "name"
+    t.string "address"
+    t.string "has"
+    t.string "hasnt"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["neighbourhood_id"], name: "index_condominia_on_neighbourhood_id"
+  end
+
+  create_table "neighbourhoods", force: :cascade do |t|
+    t.bigint "city_id"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["city_id"], name: "index_neighbourhoods_on_city_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,4 +57,5 @@ ActiveRecord::Schema.define(version: 2020_10_27_171228) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "condominia", "neighbourhoods"
 end
