@@ -3,4 +3,13 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def anunciar
+  end
+
+  def parceiros
+  end
+
+  def contatos
+  end
 end
