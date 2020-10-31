@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
     <% end %>
 
@@ -11,16 +11,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <%= link_to "Buscar Imóveis", "#", class: "nav-link" %>
+          <%= link_to "Buscar Imóveis", apartments_path , class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Anunciar Imóveis", "#", class: "nav-link" %>
+          <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Parceiros", "#", class: "nav-link" %>
+          <%= link_to "Parceiros", parceiros_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contatos", "#", class: "nav-link" %>
+          <%= link_to "Contatos", contatos_path, class: "nav-link" %>
         </li>
       <% if user_signed_in? %>
         <li class="nav-item dropdown">
