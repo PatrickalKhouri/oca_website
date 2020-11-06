@@ -1,0 +1,29 @@
+.partner-image {
+  height: 10000px;
+  flex: 1;
+  object-fit: cover;
+  padding: 10px
+}
+
+.top {
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
+}
+
+.top h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.top p {
+  margin: 25px;
+}
+
+.bottom p {
+  text-align: right;
+  margin: 20px;
+}
