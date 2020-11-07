@@ -1,18 +1,27 @@
 .footer {
-  background: #F4F4F4;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  width: 100%;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  font: rgba(0,0,0,0.3);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220)
 }
+
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: #1d3557;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -21,6 +30,13 @@
 .footer-links a:hover {
   opacity: 1;
 }
-.footer .fa-heart {
-  color: #D23333;
+
+.logo {
+  width: 80px;
+  margin-left: 100px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
 }

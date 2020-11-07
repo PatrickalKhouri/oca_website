@@ -1,12 +1,26 @@
 <div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
+  <%=image_tag("Logo_Oca.PNG", class: "logo")%>
   <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+    A OCA é uma plataforma online de oferta e demanda de aluguéis de apartamentos no Rio de Janeiro.
+  </div>
+  <div>
+    <li>
+      <%= link_to "Buscar Imóveis", apartments_path , class: "nav-link" %>
+    </li>
+    <li>
+      <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "nav-link" %>
+    </li>
+    <li>
+      <%= link_to "Parceiros", parceiros_path, class: "nav-link" %>
+    </li>
+    <li>
+      <%= link_to "Contatos", contatos_path, class: "nav-link" %>
+    </li>  
+  </div>
+  <div class="footer-links">
+    <a href="http://instagram.com/oca_carioca"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/ocacariocabr"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/channel/UCRi9RhsKiKOaLogs0t28bDQ"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/company/ocacarioca/about/"><i class="fab fa-linkedin"></i></a>
   </div>
 </div>
