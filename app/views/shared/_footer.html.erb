@@ -1,26 +1,36 @@
-<div class="footer">
-  <%=image_tag("Logo_Oca.PNG", class: "logo")%>
-  <div class="footer-copyright">
-    A OCA é uma plataforma online de oferta e demanda de aluguéis de apartamentos no Rio de Janeiro.
+<div class="footer flex-container">
+  <div class="col-2">
   </div>
-  <div>
-    <li>
-      <%= link_to "Buscar Imóveis", apartments_path , class: "nav-link" %>
-    </li>
-    <li>
-      <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "nav-link" %>
-    </li>
-    <li>
-      <%= link_to "Parceiros", parceiros_path, class: "nav-link" %>
-    </li>
-    <li>
-      <%= link_to "Contatos", contatos_path, class: "nav-link" %>
-    </li>  
+  <div class="md-col-4 ml-3 d-flex">
+    <%=image_tag("Logo_Oca.PNG", class: "logo")%>
+    <div class="footer-copyright">
+      A OCA é uma plataforma online de oferta e demanda de aluguéis de apartamentos no Rio de Janeiro.
+    </div>
   </div>
-  <div class="footer-links">
+  <div class="md-col-5">
+    <div class="column">
+      <ul>
+        <%= link_to "Buscar Imóveis", apartments_path , class: "foot-link" %>
+      </ul>
+      <ul>
+        <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "foot-link" %>
+      </ul>
+    </div>
+    <div class="column">
+    <ul>
+      <%= link_to "Parceiros", parceiros_path, class: "foot-link" %>
+    </ul>
+    <ul>
+      <%= link_to "Contatos", contatos_path, class: "foot-link" %>
+    </ul>
+    
+  </div>
+  <div class="md-col-4 footer-links">
     <a href="http://instagram.com/oca_carioca"><i class="fab fa-instagram"></i></a>
     <a href="https://www.facebook.com/ocacariocabr"><i class="fab fa-facebook"></i></a>
     <a href="https://www.youtube.com/channel/UCRi9RhsKiKOaLogs0t28bDQ"><i class="fab fa-youtube"></i></a>
     <a href="https://www.linkedin.com/company/ocacarioca/about/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="col-2">
   </div>
 </div>
