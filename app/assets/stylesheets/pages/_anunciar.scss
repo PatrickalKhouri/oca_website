@@ -1,5 +1,6 @@
 
 .top1{
+  padding-bottom: 100;
   border-bottom-style: solid;
   border-width: thin;
   border-color: rgb(220,220,220);
@@ -9,6 +10,7 @@
   float: left;
   width: 50%;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 h5 {
@@ -21,7 +23,13 @@ p {
   line-height: 2
 }
 
-.column2 {
+.column2   {
   float: left;
   width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mid2 {
+  margin: 50;
 }
