@@ -6,9 +6,6 @@ Rails.application.routes.draw do
   #creates all 7 actions for the apartments model, index, show, new, create, edit, update,  destroy
   resources :apartments
 
-  # mail form
-  resources :contact, only: [:create]
-
   # Navbar pages, contacts, partners and to contact us for new aparments
   get '/anunciar-imoveis', to: 'pages#anunciar'
   get '/parceiros', to: 'pages#parceiros'
