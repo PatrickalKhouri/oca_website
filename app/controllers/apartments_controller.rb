@@ -4,4 +4,7 @@ class ApartmentsController < ApplicationController
   def index
     @apartments = Apartment.where(active: true)
   end
-end
+
+  def new
+    @apartment = Apartment.new
+  end

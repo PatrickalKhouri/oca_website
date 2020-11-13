@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   resources :apartments
 
   # mail form
-  resources :contact, only: [:create]
+  resources :contacts, only: [:new, :create]
+  # email messages
+  resources :messages, only: [:new, :create]
 
   # Navbar pages, contacts, partners and to contact us for new aparments
   get '/anunciar-imoveis', to: 'pages#anunciar'

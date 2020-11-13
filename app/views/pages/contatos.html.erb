@@ -7,6 +7,10 @@
     <p class="text">Estamos ligados 24 horas por dia, 7 dias por semana. Contamos com um time de especialistas preparados para atendê-lo, rapidamente.</p>
   </div>
   <div class= "column">
-   <p>Teste 2</p>
-  </div>
+   <h2>Sign up</h2>
+
+  <%= simple_form_for(@city) do |f| %>
+  <%= f.input :name %>  
+  <%= f.button :submit %>
+  <% end %>
 </div>
