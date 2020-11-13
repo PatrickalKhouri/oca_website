@@ -5,8 +5,6 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-config.action_mailer.delivery_method = :postmark
-config.action_mailer.postmark_settings = { :api_token => "POSTMARK_API_TEST" }
 
 module OcaWebsite
   class Application < Rails::Application

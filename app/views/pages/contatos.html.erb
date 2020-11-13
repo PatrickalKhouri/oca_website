@@ -7,10 +7,31 @@
     <p class="text">Estamos ligados 24 horas por dia, 7 dias por semana. Contamos com um time de especialistas preparados para atendê-lo, rapidamente.</p>
   </div>
   <div class= "column">
-   <h2>Sign up</h2>
+<!-- modify this form HTML and place wherever you want your form -->
 
-  <%= simple_form_for(@city) do |f| %>
-  <%= f.input :name %>  
-  <%= f.button :submit %>
-  <% end %>
+<form
+  action="https://formspree.io/f/xpzoldbj"
+  method="POST"
+>
+ <label>
+    Nome:
+    <input type="text" name="_nome">
+  </label>
+   <label>
+    Email:
+    <input type="text" name="_responderpara">
+  </label>
+  <label>
+    Telefone:
+    <input type="text" name="_telefone">
+  </label>
+  <label>
+    Sua mensagem:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
 </div>
