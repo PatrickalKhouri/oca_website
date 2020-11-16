@@ -1,6 +1,6 @@
 <div>
   <div class="top1 container d-flex">
-    <div class="column1">
+    <div class="column1" id="intro-text">
       <h3><strong>Quero me tornar um Proprietário Parceiro da Oca Carioca</strong></h3>
       <h5>Transforme seu imóvel parado em um negócio lucrativo</h5>
       <p>Aqui, na Oca Carioca, você nos dá autorização para anunciar seu imóvel e recebe seu pagamento. 
@@ -8,7 +8,27 @@
        cuidamos de todo o processo para que você não tenha nenhuma dor de cabeça!</p>
     </div>
     <div class= "column1">
-      <p>Formulário</p>
+      <form
+  action="https://formspree.io/f/xpzoldbj"
+  method="POST"
+>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzoldbj" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nome</label>
+    <input type="text" name="name" id="full-name" placeholder="Primeiro e ultimo nome" required="">
+    <label for="phone">Telefone</label>
+    <input type="text" name="phone" id="telefone" placeholder="(99) 99999-9999" required="">
+    <label for="email-address">Email</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@exemplo.com" required="">
+    <label for="city">Cidade</label>
+    <input type="text" name="city" id="cidade" placeholder="Rio de Janeiro" required="">
+     <label for="neighbourhood">Bairro</label>
+    <input type="text" name="neighbourhood" id="bairro" placeholder="Ipanema" required="">
+  </fieldset>
+  <input type="submit" value="Submit">
+
+  <!-- your other form fields go here -->
+</form>
     </div>
   </div>
   <div class="mid2 container d-flex">
