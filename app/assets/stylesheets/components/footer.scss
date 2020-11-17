@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  width: 100%;
   padding: 0px 50px;
   font: rgba(0,0,0,0.3);
   position: absolute;
@@ -20,6 +19,7 @@
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: #1d3557;
   opacity: 0.4;
@@ -31,13 +31,9 @@
   opacity: 1;
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
 .footer-copyright {
   font-weight: lighter;
+  text-align: justify;
 }
 .foot-link {
   color: black;
