@@ -8,3 +8,4 @@ class ApartmentsController < ApplicationController
   def new
     @apartment = Apartment.new
   end
+end
