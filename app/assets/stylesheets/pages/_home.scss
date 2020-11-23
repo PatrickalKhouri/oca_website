@@ -19,6 +19,9 @@
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
 }
 
 .card-category {
