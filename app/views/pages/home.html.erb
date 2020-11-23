@@ -1,2 +1,144 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div>
+	<div class="top container">
+		<%=image_tag("Fundo-home.png", class: "top-image ")%>
+		<p><strong>A opção perfeita para quem procura ou anuncia um imóvel na cidade maravilhosa</strong></p>
+	</div>
+	<div class="neighbourhoods">
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Buzios.jpg") %>) ">
+					Búzios
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/botafogo.jpg") %>) ">
+					Botafogo
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Lapa.jpg") %>) ">
+					Lapa
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Laranjeiras.jpg") %>) ">
+					Laranjeiras
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Leblon.jpg") %>) ">
+					Leblon
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Ipanema.jpg") %>) ">
+					Ipanema
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Copacabana.jpg") %>) ">
+					Copacabana
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Leme.jpg") %>) ">
+					Leme
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/barra.jpg") %>) ">
+					Barra
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Lagoa.jpg") %>) ">
+					Lagoa
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Gavea.jpg") %>) ">
+					Gávea
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/Flamengo.jpg") %>) ">
+					Flamengo
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/humaita.jpg") %>) ">
+					Humaitá
+				</div>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to apartments_path do %>
+				<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("Bairros/centro.jpg") %>) ">
+					Centro
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<div class="mid3 container">
+    <div>
+      <h3><strong>Beneficios</strong></h3>
+    </div>
+    <div class="anunciar-cards container d-flex justify-content-between">
+      <div class="anunciar-card">
+        <%=image_tag("agilidade.png", class: "card-images ", size: "340x214")%>
+        <h5><strong>AGILIDADE</strong></h5>
+        <p>Nós simplificamos o aluguel por temporada. A negociação é sem burocracia, você pode agendar visitas e acompanhar todo o processo online.</p>
+      </div>
+      <div class="anunciar-card">
+        <%=image_tag("confianca.png", class: "card-images ", size: "340x214")%>
+        <h5><strong>CONFIANÇA</strong></h5>
+        <p>Nossos anúncios são de verdade, pois temos a melhor equipe de curadoria! Garantimos que o que você vê nas fotos, irá encontrar no local. Com a gente, sua estadia na cidade será realmente maravilhosa.</p>
+      </div>
+      <div class="anunciar-card">
+        <%=image_tag("garantia.png", class: "card-images ", size: "340x214")%>
+        <h5><strong>DO SEU JEITO</strong></h5>
+        <p>Nossa busca é inteligente e personalizada de acordo com seu estilo para mostrar os anúncios que são relevantes para você!</p>
+      </div>
+    </div>  
+  </div>
+  <div class="bottom4 container">
+    <div>
+      <h3><strong>O que falam de nós...</strong></h3>
+    </div>
+    <div class="yt container d-flex justify-content-between">
+      <div>
+        <iframe width="340" height="191" src="https://www.youtube.com/embed/0XEgLsaI7Ik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe width="340" height="191" src="https://www.youtube.com/embed/XPbw3lT1Yiw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe width="340" height="191" src="https://www.youtube.com/embed/JGIDOLLif-8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>  
+  </div>
+</div>
