@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # Navbar pages, contacts, partners and to contact us for new aparments
   get '/anunciar-imoveis', to: 'pages#anunciar'
   get '/parceiros', to: 'pages#parceiros'
-  get '/parceiros/cachine', to: 'pages#cachine'
+  get '/parceiros/estudiocachine', to: 'pages#cachine'
+  get '/parceiros/brunobou', to: 'pages#bruno_bou'
   get '/contatos', to: 'pages#contatos'
 end
