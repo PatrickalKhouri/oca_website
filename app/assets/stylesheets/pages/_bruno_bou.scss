@@ -1,0 +1,42 @@
+.bruno-fotos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-bruno {
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px
+}
+
+.row-1 {
+  height: 240px;
+  width: 360px;
+}
+
+.row-2 {
+  height: 540px;
+  width: 360px;
+}
+
+.row-3 {
+  height: 540px;
+  width: 360px;
+}
+
+.row-4 {
+  height: 240px;
+  width: 360px;
+}
+
+.row-5 {
+  height: 740px;
+  width: 360px;
+}
