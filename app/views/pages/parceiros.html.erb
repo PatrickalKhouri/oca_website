@@ -6,13 +6,13 @@
   <div class="bottom">
     <p>Apresentamos aqui <strong>Bruno Bou, Estúdio Cachiné e Ceramo.</strong></p>
     <p>Aprecie e adquira peças exclusivas.</p>
-    <div class="d-flex m-3">
-      <div>
-        <%=image_tag("Bruno_Bou.jpg", class: "partner-images ")%>
-      </div>
-      <div id="Cachine">
-        <%=image_tag("Cachine.jpg", class: "partner-images ") %>
-      </div>
-    </div>
+    <div class="container d-flex m-3">
+      <%= link_to parceiros_brunobou_path do %>
+        <%=image_tag("Bruno_Bou.jpg", class: "partner-images", id: "Bruno-Bou")%>
+      <% end %>
+      <%= link_to parceiros_estudiocachine_path do %>  
+        <%=image_tag("Cachine.jpg", class: "partner-images", id: "Estudio-Cachine") %>
+      <% end %>
   </div>
 </div>
+
