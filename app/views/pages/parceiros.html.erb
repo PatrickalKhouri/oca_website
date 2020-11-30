@@ -3,16 +3,16 @@
   <h1>PARCEIROS</h1>
   <p>Entendendo a importância de valorizar produtores da nossa comunidade, surgiu o Projeto <strong>PARCEIROS</strong>, com o intuito de fazer uma curadoria de artistas locais que possuem a identidade da <strong>OCA CARIOCA</strong>.</p>
   </div>
-  <div class="bottom">
+  <div class="bottom-parceiros">
     <p>Apresentamos aqui <strong>Bruno Bou, Estúdio Cachiné e Ceramo.</strong></p>
     <p>Aprecie e adquira peças exclusivas.</p>
-    <div class="d-flex m-3">
-      <div>
-        <%=image_tag("Bruno_Bou.jpg", class: "partner-images ")%>
-      </div>
-      <div id="Cachine">
-        <%=image_tag("Cachine.jpg", class: "partner-images ") %>
-      </div>
-    </div>
+    <div class="container d-flex m-3">
+      <%= link_to parceiros_brunobou_path do %>
+        <%=image_tag("Bruno_Bou.jpg", class: "partner-images", id: "Bruno-Bou")%>
+      <% end %>
+      <%= link_to parceiros_estudiocachine_path do %>  
+        <%=image_tag("Cachine.jpg", class: "partner-images", id: "Estudio-Cachine") %>
+      <% end %>
   </div>
 </div>
+
