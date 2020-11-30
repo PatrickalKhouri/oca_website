@@ -18,7 +18,7 @@ p {
   margin: 25px;
 }
 
-.bottom p {
+.bottom-parceiros p {
   text-align: right;
   margin: 20px;
 }
@@ -26,17 +26,22 @@ p {
 .partner-images {
   height: 683px;
   width: 547px;
-  margin: 8px;
+  margin-bottom: 100px;
+}
+
+#Bruno-Bou {
+  margin-right: 8px;
 }
 
 #Bruno-Bou:hover {
   opacity: 0.3;
   color: white;
-  transition: .3 ease;
+  transition: .5 ease;
+ 
 }
 
 #Estudio-Cachine:hover {
   opacity: 0.3;
   color: white;
-  transition: .3 ease;
+  transition: .5 ease;
 }
