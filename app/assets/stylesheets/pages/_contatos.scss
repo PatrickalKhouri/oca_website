@@ -1,23 +1,23 @@
 .column {
   float: left;
   width: 50%;
-  margin-top: 100px;
+  margin-top: 5%;
 
 }
 
 .text {
-  font-size: 18px;
+  font-size: 16px;
   color: grey;
   margin-top: 25px;
 }
 
 .list {
-  font-size: 18px;
+  font-size: 16px;
   color: grey;
 }
 
-.a{
-  color: black;
+.contacts a{
+  font-size: 16px;;
 }
 
 form input,
@@ -28,12 +28,12 @@ form optgroup,
 form label,
 .StripeElement {
   font-family: inherit;
-  font-size: 100%;
+  font-size: 90%;
   color: inherit;
   border: none;
   border-radius: 0;
   display: block;
-  width: 100%;
+  width: 90%;
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -51,6 +51,7 @@ form textarea,
 .StripeElement {
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
