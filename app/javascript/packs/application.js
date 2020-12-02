@@ -24,6 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { formRender } from '../components/forms';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -33,4 +34,6 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
 });
 
+
+console.log(formRender)
 console.log("Hello from app/javascript/packs/application.js!");
