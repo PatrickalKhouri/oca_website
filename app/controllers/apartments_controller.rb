@@ -2,7 +2,8 @@ class ApartmentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
-    @apartments = Apartment.where(active: true)
+    # @apartments = Apartment.all
+    @apartments = policy_scope(Apartment)
   end
 
   def new
