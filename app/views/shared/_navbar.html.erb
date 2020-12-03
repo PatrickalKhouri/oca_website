@@ -1,42 +1,44 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon container">
-  <%= link_to root_path, class: "navbar-brand" do %>
-    <img src="<%= image_path('Logo_Oca.PNG') %>" />
-    <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <%= link_to "Buscar Imóveis", apartments_path , class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Parceiros", parceiros_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Contatos", contatos_path, class: "nav-link" %>
-        </li>
-      <% if user_signed_in? %>
-        <li class="nav-item dropdown">
-          <%= current_user.first_name%>
-         <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= image_path('Genderless_icon.png') %>" />
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Minha Conta", "#", class: "dropdown-item" %>
-            <%= link_to "Lista de Favoritos", "#", class: "dropdown-item" %>
-            <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Entrar/Se Inscrever", new_user_session_path, class: "nav-link" %>
-        </li>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class='container'>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <img src="<%= image_path('Logo_Oca.PNG') %>" />
       <% end %>
-    </ul>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <%= link_to "Buscar Imóveis", apartments_path , class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Anunciar Imóveis", anunciar_imoveis_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Parceiros", parceiros_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contatos", contatos_path, class: "nav-link" %>
+          </li>
+        <% if user_signed_in? %>
+          <li class="nav-item dropdown">
+            <%= current_user.first_name%>
+          <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= image_path('Genderless_icon.png') %>" />
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <%= link_to "Minha Conta", "#", class: "dropdown-item" %>
+              <%= link_to "Lista de Favoritos", "#", class: "dropdown-item" %>
+              <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Entrar/Se Inscrever", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </div>
