@@ -1,14 +1,79 @@
-<div class="apartments-index">
-  <% @apartments.each do |apartment| %>
-    <div class="card-trip">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= apartment.name %></h2>
-        <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+<div class="buscar-apartamentos">
+  <div class="topo-apartamentos">
+    <h1>Buscar Imóveis</h1>
+    <div class="search-filters d-flex">
+      <!-- Search form -->
+      <input class="form-control" type="text" placeholder="Buscar Imóvel - náo funcionando" aria-label="Search"> 
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
       </div>
-      <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
+        <div class="dropdown rooms">
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Quartos
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+          </div>
+        </div>
+        <div class="dropdown m2">
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            M2
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <input class="form-control" type="text" placeholder="Buscar Imóvel - náo funcionando" aria-label="Search"> 
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" 
+                    id="dropdownMenu1" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="true">
+              <i class="glyphicon glyphicon-cog"></i>
+              <span class="caret"></span>
+              Bairros
+            </button>
+            <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+            
+              <li >
+                <label>
+                  <input type="checkbox"> Cheese
+                </label>
+              </li>
+              
+              <li >
+                <label>
+                  <input type="checkbox"> Pepperoni
+                </label>
+              </li>
+              
+              <li >
+                <label>
+                  <input type="checkbox"> Peppers
+                </label>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
     </div>
   </div>
-  <% end %>
+  <div class="apartments-index">
+    <% @apartments.each do |apartment| %>
+      <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= apartment.name %></h2>
+          <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+        </div>
+        <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>
