@@ -1,12 +1,14 @@
-<% @apartments.each do |apartment| %>
-  <div class="card-trip">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <div class="card-trip-infos">
-    <div>
-      <h2><%= apartment.name %></h2>
-      <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest}" %><p>
+<div class="apartments-index">
+  <% @apartments.each do |apartment| %>
+    <div class="card-trip">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= apartment.name %></h2>
+        <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+      </div>
+      <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
     </div>
-    <h2 class="card-trip-pricing"><%="R$#{apartment.price}"%> </h2>
   </div>
+  <% end %>
 </div>
-<% end %>

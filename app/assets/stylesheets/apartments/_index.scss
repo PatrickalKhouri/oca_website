@@ -1,20 +1,31 @@
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+.apartments-index {
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1f
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.card-trip {
+  // overflow: hidden;
+  background: white;
+  height: 220px;
+  margin: 15px;
+  // border-style: solid;
+  // border-width: thin;
+  // border-color: rgb(220,220,220);
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 80%;
   width: 100%;
   object-fit: cover;
 }
 
 .card-trip h2 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: lighter;
   margin: 0;
 }
 
@@ -31,11 +42,5 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+  margin-top: -5px;
 }
