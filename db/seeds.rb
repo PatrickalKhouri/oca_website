@@ -154,7 +154,7 @@ transportation: "Leblon Timóteo fica em um local de fácil acesso, próximo ao 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "032")
-file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+file = image_tag("Bruno_Bou.jpg")
 leblon_timoteo.photo.attach(io: file, filename: 'boat1.jpg')
 
 
