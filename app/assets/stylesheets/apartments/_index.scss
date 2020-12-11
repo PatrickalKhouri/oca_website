@@ -1,0 +1,85 @@
+.topo-apartamentos h1 {
+  font-family: "Lora";
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 25%;
+}
+
+
+.apartments-index {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-trip {
+  // overflow: hidden;
+  background: white;
+  height: 220px;
+  margin: 15px;
+  // border-style: solid;
+  // border-width: thin;
+  // border-color: rgb(220,220,220);
+}
+
+.card-trip > img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-top: -5px;
+}
+
+.checkbox-menu li label {
+  padding: 3px 10px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  margin:0;
+  transition: background-color .4s ease;
+}
+.checkbox-menu li input {
+  margin: 0px 5px;
+  top: 2px;
+  position: relative;
+}
+
+.checkbox-menu li.active label {
+  background-color: #cbcbff;
+  font-weight:bold;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+  background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+  background-color: #b8b8ff;
+}

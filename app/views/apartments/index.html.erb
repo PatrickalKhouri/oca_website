@@ -1,3 +1,26 @@
-<% @apartments.each do |apartment| %>
-<%= "#{apartment.oca_id} - #{apartment.name}" %>
-<% end %>
+<div class="buscar-apartamentos">
+  <div class="topo-apartamentos">
+    <h1>Buscar Imóveis</h1>
+    <div class="search-filters d-flex">
+      <%= render 'shared/search' %>
+      <%= render 'shared/price_filter' %>
+      <%= render 'shared/room_filter' %>
+      <%= render 'shared/m2_filter' %>
+      <%= render 'shared/neighbourhood_filter' %>
+    </div>
+  </div>
+  <div class="apartments-index">
+    <% @apartments.each do |apartment| %>
+      <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= apartment.name %></h2>
+          <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+        </div>
+        <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
