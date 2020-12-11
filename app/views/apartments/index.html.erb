@@ -2,52 +2,11 @@
   <div class="topo-apartamentos">
     <h1>Buscar Imóveis</h1>
     <div class="search-filters d-flex">
-      <!-- Search form -->
-      <input class="form-control" type="text" placeholder="Buscar Imóvel - náo funcionando" aria-label="Search"> 
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
-      </div>
-      <div class="dropdown rooms">
-        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Quartos
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">1</a>
-          <a class="dropdown-item" href="#">2</a>
-          <a class="dropdown-item" href="#">3</a>
-          <a class="dropdown-item" href="#">4</a>
-          <a class="dropdown-item" href="#">5</a>
-        </div>
-      </div>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
-      </div>
-      <div class="dropdown neighbourhoods">
-        <button class="btn btn-default dropdown-toggle" type="button" 
-                id="dropdownMenu1" data-toggle="dropdown" 
-                aria-haspopup="true" aria-expanded="true">
-          <i class="glyphicon glyphicon-cog"></i>
-          <span class="caret"></span>
-            Bairros
-        </button>
-        <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
-          <li >
-            <label>
-              <input type="checkbox"> Cheese
-            </label>
-            </li>
-          <li>
-            <label>
-              <input type="checkbox"> Pepperoni
-            </label>
-          </li>
-          <li >
-            <label>
-              <input type="checkbox"> Peppers
-            </label>
-          </li>  
-        </ul>
-      </div>
+      <%= render 'shared/search' %>
+      <%= render 'shared/price_filter' %>
+      <%= render 'shared/room_filter' %>
+      <%= render 'shared/m2_filter' %>
+      <%= render 'shared/neighbourhood_filter' %>
     </div>
   </div>
   <div class="apartments-index">
