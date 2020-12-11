@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'cloudinary', '~> 1.16.0'
+# image upload
+
 gem 'mail_form'
 # Send email from the website 
 
@@ -29,6 +32,7 @@ gem 'devise'
 # User authentication
 
 gem 'pundit'
+# User authorization
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

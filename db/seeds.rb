@@ -80,6 +80,8 @@ transportation: "Morar em Copacabana é sinônimo de não se preocupar com trans
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cafeteira Nespresso, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso Vinílico, Toalhas e Lençóis",
 hasnt: "Banheira, Cabides, Churrasqueira, Cooktop Elétrico, Elevador, Espaço pronto para uso de notebook, Ferro de Passar, Frigobar, Jacuzzi, Lareira, Piano, Piscina, Piso de Madeira, Púlpito para casamentos, TV, TV a cabo, Varanda, Wi-fi",
 active: true , oca_id: "033")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+copa_paranhos.photo.attach(io: file, filename: 'boat1.jpg')
 
 copa_beach = Apartment.create(name: "Copacabana Beach", condominium: atlantica_1936, number: "803", price: 120, m2: 30, room: 1, guest: 2, bed: 1, bathroom: 1, pet_friendly: true,
 description: "Apartamento ideal para 2 pessoas no coração do Rio de Janeiro, Copacabana. Em frente a praia, perto de supermercado, metro e de qualquer serviço ou loja que precise. O prédio conta com portaria 24 horas por dia. Você não vai se arrepender de se hospedar aqui!",
@@ -92,6 +94,8 @@ transportation: "Perto do metrô, apenas 5 minutos caminhando. Você pode pratic
 has: "Água quente, Ar condicionado, Armário de Cozinha, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Geladeira, Louças e talheres, Microondas, Toalhas e Lençóis, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "009")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+copa_beach.photo.attach(io: file, filename: 'boat1.jpg')
 
 copa_cupuacu = Apartment.create(name: "Copacabana Cupuaçu", condominium: atlantica_3958, number: "1006", price: 300, m2: 90, room: 3, guest: 6, bed: 5, bathroom: 2, pet_friendly: false,
 description: "COPACABANA CUPUAÇU é um bem decorado e iluminado apartamento aos pés da praia de Copacabana. Espaçoso, possui 3 quartos confortáveis, sendo ideal para grupos e famílias. Conta com cozinha equipada e máquina de lavar. Completo para ter uma estadia perfeita.",
@@ -100,6 +104,8 @@ transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Geladeira, Máquina de Lavar, Microondas, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "054")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+copa_cupuacu.photo.attach(io: file, filename: 'boat1.jpg')
 
 copa_pitanga = Apartment.create(name: "Copacabana Pitanga", condominium: nossa_senhora_1292 , number: "602", price: 230, m2: 77, room: 2, guest: 4, bed: 3, bathroom: 2, pet_friendly: false,
 description: "Apartamento em Copacabana para 4 pessoas especialmente mobiliado para locação por temporada. Extremamente próximo de Ipanema e Arpoador e ao mesmo tempo a 1 quadra da Praia de Copacabana. Perfeito para famílias e viajantes de negócio.",
@@ -108,6 +114,8 @@ transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Microondas, Piso de Madeira, Toalhas e Lençóis, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "059")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+copa_pitanga.photo.attach(io: file, filename: 'boat1.jpg')
 
 copa_ieda = Apartment.create(name: "Copacabana Ieda", condominium: nossa_senhora_750 , number: "608", price: 150, m2: 77, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
 description: "Copacabana Ieda tem um ambiente simplista, mas charmoso. Todo em branco, com detalhes que fazem a diferença e organizado especialmente para o hóspede. Conta com TV a cabo grande e moderna, Wi-fi e ar-condicionado. Janela do quarto com blecaute e armário amplo para garantir que guarde todas as suas roupas. O prédio é charmoso, 2 quadras da praia e fica em uma das principais ruas do bairro, com acesso fácil para qualquer lugar da cidade. Você vai amar! Bom para casais e viajantes de negócios.",
@@ -116,6 +124,8 @@ transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam 
 has: "Ar condicionado, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "024")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+copa_ieda.photo.attach(io: file, filename: 'boat1.jpg')
 
 leblon_caja = Apartment.create(name: "Leblon Cajá", condominium: timoteo_da_costa_541 , number: "407", price: 250, m2: 28, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
 description: "Charmoso apartamento de 1 quarto no Alto Leblon. Localizado em área calma e tranquila, em alguns minutos chega-se a praia, metrô e melhores restaurantes da cidade. Apartamento completo para você passar uma excelente estadia! Ideal para casais e viajantes de negócios.",
@@ -124,6 +134,8 @@ transportation: "Leblon Cajá fica no Alto Leblon, região mais residencial do b
 has: "Água quente, Ar condicionado, Armário de Cozinha, Espaço pronto para uso de notebook, Frigobar, Louças e talheres, Toalhas e Lençóis, TV, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "060")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+leblon_caja.photo.attach(io: file, filename: 'boat1.jpg')
 
 leblon_pyhsalis = Apartment.create(name: "Leblon Physallis", condominium: visconde_de_albuquerque_444 , number: "304", price: 370, m2: 98, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
 description: "Apartamento incrível em um dos bairros mais deliciosos do Rio, com fácil acesso para toda a cidade. Próximo a praia do Leblon, lugar ideal para quem quer curtir a Zona Sul e ao mesmo tempo estar próximo da Zona Oeste da cidade (Barra da Tijuca). Completamente reformado, com uma vista maravilhosa do quarto. Conta com ar condicionado no quarto e na sala. Cozinha espaçosa. Portaria 24 horas e estacionamento. Ideal para viajantes a negócio e casais.",
@@ -132,6 +144,8 @@ transportation: "Leblon Physalis fica em um local de fácil acesso, próximo ao 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Banheira, Blackout nas cortinas, Box blindex, Cabides, Cafeteira Nespresso, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "052")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+leblon_pyhsalis.photo.attach(io: file, filename: 'boat1.jpg')
 
 leblon_timoteo = Apartment.create(name: "Leblon Timóteo", condominium: timoteo_da_costa_82 , number: "302", price: 400, m2: 100, room: 2, guest: 4, bed: 2, bathroom: 2, pet_friendly: false,
 description: "Apartamento com a melhor localização possível do Leblon. Decoração impecável, no Alto Leblon, e o principal, sem ladeiras. Próximo a praia, metrô e melhores restaurantes da cidade, como o conceituadíssimo restaurante brasileiro de vanguarda Oro, assim como cinema, bares, etc. O apartamento dispõe de garagem e uma funcionária estará disponível alguns dias da semana para limpeza, conservação e preparo de refeições no apartamento, já incluído no preço. Melhor custo-benefício que esse, não há.",
@@ -140,6 +154,9 @@ transportation: "Leblon Timóteo fica em um local de fácil acesso, próximo ao 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "032")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+leblon_timoteo.photo.attach(io: file, filename: 'boat1.jpg')
+
 
 ipanema_jangadeiro = Apartment.create(name: "Ipanema Jangadeiro", condominium: jangadeiros_40, number: "803", price: 170, m2: 90, room: 1, guest: 3, bed: 2, bathroom: 1,  pet_friendly: false,
 description: "Ipanema Jangadeiros tem um ambiente charmoso e bem espaçoso. É perto do bar Canastra e da tradicional Praça General Osório, que conta com espaços culturais, shows, teatro, exposições e muito mais). Da janela do apartamento é possível avistar uma estação de metro. Pontos de ônibus também estão presentes. Se deslocar é bem fácil. Praia de Ipanema está próxima. Você vai amar! O local tem camas confortáveis, sala e cozinha amplas. Bom para casais, aventuras individuais e famílias (com crianças).",
@@ -150,6 +167,9 @@ transportation: " ",
 has: "Água quente, Ar condicionado, Box blindex, Cabides, Elevador, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Microondas, Piso de Madeira, Toalhas e Lençóis, TV a cabo, Varanda",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "027")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+ipanema_jangadeiro.photo.attach(io: file, filename: 'boat1.jpg')
+
 
 ipanema_cupuacu = Apartment.create(name: "Ipanema Cupuaçu", condominium: antonio_parreiras_25 , number: "306", price: 150, m2: 71, room: 2, guest: 2, bed: 1, bathroom: 2,  pet_friendly: true,
 description: "Excelente apartamento próximo a praia (5 minutos a pé) e a estação de metrô General Osório (mesma quadra). O espaço conta com um quarto principal confortável com ar condicionado, sala bastante ampla e varanda. A cozinha é espaçosa e a área de serviço contém máquina de lavar roupa. A área comum do edifício conta com 2 piscinas, academia e bar, além de espaço amplo para relaxar. Excelente para descansar e aproveitar. Ótimo ponto de Ipanema para uma excelente experiência no Rio de Janeiro.",
@@ -158,6 +178,8 @@ transportation: "O apartamento fica muito próximo a uma estação de metrô (Ge
 has: "Água quente, Ar condicionado, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Frigobar, Louças e talheres, Máquina de Lavar, Microondas, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "030")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+ipanema_cupuacu.photo.attach(io: file, filename: 'boat1.jpg')
 
 botafogo_real = Apartment.create(name: "Botafogo Real", condominium: real_grandeza_96 , number: "702", price: 200 , m2: 70, room: 2, guest: 4, bed: 2, bathroom: 2,  pet_friendly: false,
 description: "Espaço sensacional em Botafogo com 1 quarto + suíte e varanda. No condomínio, há bicicletário, espaço de convivência e área de lazer para crianças. BOTAFOGO REAL tem uma localização ótima entre a Rua São Clemente e Rua Voluntários da Pátria. Próximo a Cobal do Humaitá e com muito fácil acesso a estação de metrô de Botafogo e aos bairros de Copacabana, Ipanema e Leblon. Excelente apartamento com todos os itens novos e com uma linda vista para o Cristo Redentor..",
@@ -166,6 +188,8 @@ transportation: "BOTAFOGO REAL está a 15 minutos a pé do metrô de Botafogo, q
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cabides, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Toalhas e Lençóis, TV, Varanda.",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "064")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+botafogo_real.photo.attach(io: file, filename: 'boat1.jpg')
 
 botafogo_lima = Apartment.create(name: "Botafogo Lima ", condominium: carlos_peixoto_80 , number: "107", price: 220 , m2: 97, room: 2, guest: 3, bed: 2, bathroom: 3,  pet_friendly: false,
 description: "Espaço sensacional em Botafogo com 1 quarto + suíte, escritório e varanda. No condomínio há sala de cinema, salas de home office, salas de reunião, piscina, quadra de squash, churrasqueira e salão de festas. Algumas áreas do condomínio apresentam taxas para serem usadas. Serviço de limpeza durante a estadia já incluída, feita em dias da semana específicos, pelo condomínio. Localização perfeita, muito fácil acesso a Copacabana, Ipanema e Leblon, como também ao Centro da cidade.",
@@ -174,6 +198,8 @@ transportation: "BOTAFOGO LIMA fica próximo a pontos de ônibus que interligam 
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Box blindex, Cabides, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "047")
+file = open('https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2019/10/passeio-de-barco-em-arraial-do-cabo-17.jpg')
+botafogo_lima.photo.attach(io: file, filename: 'boat1.jpg')
 
 puts "apartments created!!!"
 

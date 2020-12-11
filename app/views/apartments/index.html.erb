@@ -12,7 +12,7 @@
   <div class="apartments-index">
     <% @apartments.each do |apartment| %>
       <div class="card-trip">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <%= cl_image_tag apartment.photo.key %>
       <div class="card-trip-infos">
         <div>
           <h2><%= apartment.name %></h2>
