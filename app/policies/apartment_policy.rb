@@ -5,7 +5,7 @@ class ApartmentPolicy < ApplicationPolicy
     end
   end
 
-  def show
+  def show?
     true
   end
 end
