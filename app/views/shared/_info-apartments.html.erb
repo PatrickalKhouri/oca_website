@@ -1,0 +1,49 @@
+ <div class="d-flex">
+  <div class="container">  
+    <% if @apartment.room == 0  %>
+      <%= image_tag("infos-apartamento/quarto-false.svg", class: "info-icon")  %>
+      <p>Nenhum Quarto</p>
+    <% else  %>
+      <%= image_tag("infos-apartamento/quarto-true.svg", class: "info-icon")  %>
+      <% if @apartment.room == 1  %>
+        <p><%= @apartment.room %> quarto</p>
+      <% else  %>
+        <p><%= @apartment.room %> quartos</p>
+      <% end  %>
+    <% end  %>
+  </div>
+  <div class="container">
+    <%= image_tag("infos-apartamento/cama.svg", class: "info-icon")  %>
+    <% if @apartment.bed == 1  %>
+      <p><%= @apartment.bed %> cama</p>
+    <% else  %>
+      <p><%= @apartment.bed %> camas</p>
+    <% end  %>
+  </div>
+  <div class="container">
+    <%= image_tag("infos-apartamento/hospedes.svg", class: "info-icon")  %>
+    <% if @apartment.guest == 1  %>
+      <p><%= @apartment.guest %> hóspede</p>
+    <% else  %>
+      <p><%= @apartment.guest %> hóspedes</p>
+    <% end  %>
+  </div>
+  <div class="container">
+    <%= image_tag("infos-apartamento/banheiro.svg", class: "info-icon")  %>
+    <% if @apartment.bathroom == 1  %>
+      <p><%= @apartment.bathroom %> banheiro</p>
+    <% else  %>
+      <p><%= @apartment.bathroom %> banheiros</p>
+    <% end  %>
+  </div>
+  <div class="container">
+    <% if @apartment.pet_friendly %>
+      <%= image_tag("infos-apartamento/pet-true.svg", class: "info-icon")  %>
+      <p> Aceita </p>
+    <% else  %>
+   <%= image_tag("infos-apartamento/pet-false.svg", class: "info-icon")  %>
+      <p> Não Aceita </p>
+    <% end  %>
+  </div>
+
+ </div>

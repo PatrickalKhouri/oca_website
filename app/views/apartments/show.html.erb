@@ -1,5 +1,14 @@
-<div class="d-flex">
-  <% @apartment.photos.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
+<div class="apartment-show">
+  <div class="apartment-caroussel d-flex">
+    <% @apartment.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  </div>  
+  <div class="apartment-info container">
+    <h3> <%= @apartment.name %> </h3>
+    <p> Apartamento inteiro,  <%= @apartment.m2 %> m2 </p>
+  </div>
+    <div class="apartment-info-images d-flex">
+      <%= render 'shared/info-apartments' %>
+    </div>
 </div>
