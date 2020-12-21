@@ -8,7 +8,36 @@
     <h3> <%= @apartment.name %> </h3>
     <p> Apartamento inteiro,  <%= @apartment.m2 %> m2 </p>
   </div>
-    <div class="apartment-info-images d-flex">
+    <div class="apartment-info-images d-flex container">
       <%= render 'shared/info-apartments' %>
     </div>
+  <div class="description container">
+    <h5>O Imóvel</h5>
+    <h6>Descrição</h6>
+    <p><%= @apartment.description %></p>
+    <h6>O Espaço</h6>
+    <p><%= @apartment.the_space %></p>
+    <h6>Acesso dos hóspedes</h6>
+    <p>O apartamento será disponibilizado inteiramente.</p>
+    <h6>Interação com os hóspedes</h6>
+    <p>Estaremos disponíveis 24 horas por dia para solucionar qualquer problema, dar dicas ou simplesmente conversar. Este imóvel é administrado pela Oca Carioca, que oferecerá todo suporte possível para fazer com que a sua estadia seja perfeita.</p>
+    <h6>O Bairro</h6>
+    <p><%= @apartment.condominium.neighbourhood.description %></p>
+    <h6>Transporte</h6>
+    <p><%= @apartment.transportation %></p>
+  </div>
+  <div class="apartment-has-hasnt container">
+    <h5>Imóvel</h5>
+    <h6>Disponível</h6>
+    <p><%= @apartment.has %></p>
+    <h6>Indisponível</h6>
+    <p><%= @apartment.hasnt %></p>
+  </div>
+  <div class="condominium-has-hasnt container">
+    <h5>Condomínio</h5>
+    <h6>Disponível</h6>
+    <p><%= @apartment.condominium.has %></p>
+    <h6>Indisponível</h6>
+    <p><%= @apartment.condominium.hasnt %></p>
+  </div>
 </div>

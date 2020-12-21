@@ -1,5 +1,54 @@
+.apartment-info {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
+}
+
+.apartment-show h6, h5 {
+  font-weight: bold;
+}
+
+.apartment-show h5 {
+  margin-bottom: 15px;
+}
+
+.apartment-info-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(190, 151, 151);
+}
+
+.apartment-info-images p { 
+}
+
 .info-icon {
   width: 50px;
   height: 50px;
   margin: 5px;
+}
+
+.description {
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(190, 151, 151);
+}
+
+.apartment-has-hasnt {
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(190, 151, 151);
+}
+
+.condominium-has-hasnt {
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(190, 151, 151);
 }

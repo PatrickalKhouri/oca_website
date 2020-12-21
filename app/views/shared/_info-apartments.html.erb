@@ -36,6 +36,19 @@
       <p><%= @apartment.bathroom %> banheiros</p>
     <% end  %>
   </div>
+  <div class="container">  
+    <% if @apartment.parking_spot == 0  %>
+      <%= image_tag("infos-apartamento/vaga-false.svg", class: "info-icon")  %>
+      <p>Nenhuma Vaga</p>
+    <% else  %>
+      <%= image_tag("infos-apartamento/vaga-true.svg", class: "info-icon")  %>
+      <% if @apartment.parking_spot == 1  %>
+        <p><%= @apartment.parking_spot %> vaga</p>
+      <% else  %>
+        <p><%= @apartment.parking_spot %> vagas</p>
+      <% end  %>
+    <% end  %>
+  </div>
   <div class="container">
     <% if @apartment.pet_friendly %>
       <%= image_tag("infos-apartamento/pet-true.svg", class: "info-icon")  %>
