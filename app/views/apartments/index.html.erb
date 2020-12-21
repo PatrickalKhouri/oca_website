@@ -1,4 +1,4 @@
-<div class="buscar-apartamentos">
+<div class="buscar-apartamentos container">
   <div class="topo-apartamentos">
     <h1>Buscar Imóveis</h1>
     <div class="search-filters d-flex">
@@ -12,7 +12,7 @@
   <div class="apartments-index">
     <% @apartments.each do |apartment| %>
       <div class="card-trip">
-      <%= cl_image_tag apartment.photo.key %>
+      <%= cl_image_tag apartment.photos.first.key %>
       <div class="card-trip-infos">
         <div>
           <h2><%= apartment.name %></h2>
