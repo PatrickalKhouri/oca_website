@@ -11,16 +11,18 @@
   </div>
   <div class="apartments-index">
     <% @apartments.each do |apartment| %>
+       <%= link_to apartment_path(apartment) do %>
       <div class="card-trip">
-      <%= cl_image_tag apartment.photos.first.key %>
-      <div class="card-trip-infos">
-        <div>
-          <h2><%= apartment.name %></h2>
-          <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+        <%= cl_image_tag apartment.photos.first.key %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= apartment.name %></h2>
+            <p><%="#{apartment.m2} m2 | #{apartment.room} quartos | #{apartment.guest} hóspedes" %><p>
+          </div>
+          <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
         </div>
-        <h2 class="card-trip-infos"><%="R$#{apartment.price}"%> </h2>
       </div>
-    </div>
+    <% end %>
     <% end %>
   </div>
 </div>
