@@ -8,6 +8,11 @@ class ApartmentsController < ApplicationController
 
   def show
     @apartment = Apartment.find(params[:id])
+    @markers = {
+      lat: @apartment.condominium.latitude,
+      lng: @apartment.condominium.longitude
+    }
+
     authorize @apartment
   end
 end

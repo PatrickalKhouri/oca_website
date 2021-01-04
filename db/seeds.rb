@@ -33,40 +33,40 @@ puts "created neighbourhoods!!"
 
 puts 'creating condominiums....'
 
-raul_pompeia_201 = Condominium.create(address: "Raul Pompéia, 201", neighbourhood: Neighbourhood.first, has: "Hall de Entrada, Portaria 24h",
+raul_pompeia_201 = Condominium.create(address: "Raul Pompéia, 201, #{Neighbourhood.first.name}", neighbourhood: Neighbourhood.first, has: "Hall de Entrada, Portaria 24h",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-atlantica_1936 = Condominium.create(address: "Av. Atlantica, 1936", neighbourhood: Neighbourhood.first, has: "Hall de Entrada, Portaria 24h",
+atlantica_1936 = Condominium.create(address: "Av. Atlantica, 1936, #{Neighbourhood.first.name}", neighbourhood: Neighbourhood.first, has: "Hall de Entrada, Portaria 24h",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-atlantica_3958 = Condominium.create(address: "Av. Atlantica, 3958", neighbourhood: Neighbourhood.first, has: " ",
+atlantica_3958 = Condominium.create(address: "Av. Atlantica, 3958, #{Neighbourhood.first.name}", neighbourhood: Neighbourhood.first, has: " ",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Playground, Portaria 24h, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-nossa_senhora_1292 = Condominium.create(address: "Av. Nossa Senhora de Copacabana, 1292", neighbourhood: Neighbourhood.first, has: "Elevador, Hall de Entrada, Portaria 24h",
+nossa_senhora_1292 = Condominium.create(address: "Av. Nossa Senhora de Copacabana, 1292, #{Neighbourhood.first.name}", neighbourhood: Neighbourhood.first, has: "Elevador, Hall de Entrada, Portaria 24h",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-nossa_senhora_750 = Condominium.create(address: "Av. Nossa Senhora de Copacabana, 750", neighbourhood: Neighbourhood.first, has: "Elevador, Portaria 24h",
+nossa_senhora_750 = Condominium.create(address: "Av. Nossa Senhora de Copacabana, 750, #{Neighbourhood.first.name}", neighbourhood: Neighbourhood.first, has: "Elevador, Portaria 24h",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-timoteo_da_costa_541 = Condominium.create(address: "Rua Timóteo da Costa 541", neighbourhood: Neighbourhood.second, has: "Água quente, Ar condicionado, Armário de Cozinha, Espaço pronto para uso de notebook, Frigobar, Louças e talheres, Toalhas e Lençóis, TV, Wi-fi",
+timoteo_da_costa_541 = Condominium.create(address: "Rua Timóteo da Costa 541, #{Neighbourhood.second.name}", neighbourhood: Neighbourhood.second, has: "Água quente, Ar condicionado, Armário de Cozinha, Espaço pronto para uso de notebook, Frigobar, Louças e talheres, Toalhas e Lençóis, TV, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Box blindex, Cabides, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Ferro de Passar, Fogão, Forno, Geladeira, Jacuzzi, Lareira, Máquina de Lavar, Microondas, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, TV a cabo, Varanda")
 
-visconde_de_albuquerque_444 =Condominium.create(address: "Av. Visconde de Albuquerque, 444", neighbourhood: Neighbourhood.second, has: "Elevador, Estacionamento, Portaria 24h",
+visconde_de_albuquerque_444 =Condominium.create(address: "Av. Visconde de Albuquerque, 444, #{Neighbourhood.second.name}", neighbourhood: Neighbourhood.second, has: "Elevador, Estacionamento, Portaria 24h",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-timoteo_da_costa_82 =Condominium.create(address: "Rua Timóteo da Costa, 82", neighbourhood: Neighbourhood.second, has: "Estacionamento",
+timoteo_da_costa_82 =Condominium.create(address: "Rua Timóteo da Costa, 82, #{Neighbourhood.second.name}", neighbourhood: Neighbourhood.second, has: "Estacionamento",
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Elevador, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia,  Portaria 24h, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-jangadeiros_40 = Condominium.create(address: "Rua Jangadeiros, 40", neighbourhood: Neighbourhood.third, has: "Elevador, Portaria 24h", 
+jangadeiros_40 = Condominium.create(address: "Rua Jangadeiros, 40, #{Neighbourhood.third.name}", neighbourhood: Neighbourhood.third, has: "Elevador, Portaria 24h", 
 hasnt: "Academia, Área de Lazer, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-antonio_parreiras_25 = Condominium.create(address: "Rua Antonio Parreiras, 25", neighbourhood: Neighbourhood.third, has: "Academia, Área de Lazer, Elevador, Estacionamento, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Portaria 24h, Sauna",
+antonio_parreiras_25 = Condominium.create(address: "Rua Antonio Parreiras, 25, #{Neighbourhood.third.name}", neighbourhood: Neighbourhood.third, has: "Academia, Área de Lazer, Elevador, Estacionamento, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Portaria 24h, Sauna",
 hasnt: "Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento gratuito na rua, Playground, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Vestiário")
 
-real_grandeza_96 = Condominium.create(address: "Rua Real Grandeza, 96", neighbourhood: Neighbourhood.fourth, has: "Área de Lazer, Estacionamento, Playground, Portaria 24h",
+real_grandeza_96 = Condominium.create(address: "Rua Real Grandeza, 96, #{Neighbourhood.fourth.name}", neighbourhood: Neighbourhood.fourth, has: "Área de Lazer, Estacionamento, Playground, Portaria 24h",
 hasnt: "Academia, Bicicletário, Campo de Futebol, Churrasqueira, Copa, Escritórios Home Office, Elevador, Espaço gourmet na área comum, Estacionamento gratuito na rua, Hall de Entrada, Jacuzzi, Lavanderia, Piscina, Quadra de Squash, Quadra esportiva, Quadra Poliesportiva, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário")
 
-carlos_peixoto_80 = Condominium.create(address: "Avenida Carlos Peixoto, 80", neighbourhood: Neighbourhood.fourth, has: "Academia, Área de Lazer, Churrasqueira, Copa, Elevador, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Hall de Entrada, Piscina, Playground, Portaria 24h, Quadra de Squash, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário",
+carlos_peixoto_80 = Condominium.create(address: "Avenida Carlos Peixoto, 80, #{Neighbourhood.fourth.name}", neighbourhood: Neighbourhood.fourth, has: "Academia, Área de Lazer, Churrasqueira, Copa, Elevador, Escritórios Home Office, Espaço gourmet na área comum, Estacionamento, Hall de Entrada, Piscina, Playground, Portaria 24h, Quadra de Squash, Sala de Cinema, Sala de Reuniões, Salão de festas, Salão de jogos, Sauna, Vestiário",
 hasnt: "Bicicletário, Campo de Futebol, Estacionamento gratuito na rua, Jacuzzi, Lavanderia, Quadra esportiva, Quadra Poliesportiva")
 
 puts "created condominiums!!!"
@@ -163,7 +163,6 @@ has: "Água quente, Ar condicionado, Box blindex, Cabides, Elevador, Espaço pro
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
 active: true , oca_id: "027")
 ipanema_jangadeiro.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'ipanema_jangadeiro', 'Foto_1.jpg')), filename: 'Ipanema Jangadeiro Foto 1.jpg')
-
 
 ipanema_cupuacu = Apartment.create(name: "Ipanema Cupuaçu", condominium: antonio_parreiras_25 , number: "306", price: 150, m2: 71, room: 2, guest: 2, bed: 1, bathroom: 2,  pet_friendly: true,
 description: "Excelente apartamento próximo a praia (5 minutos a pé) e a estação de metrô General Osório (mesma quadra). O espaço conta com um quarto principal confortável com ar condicionado, sala bastante ampla e varanda. A cozinha é espaçosa e a área de serviço contém máquina de lavar roupa. A área comum do edifício conta com 2 piscinas, academia e bar, além de espaço amplo para relaxar. Excelente para descansar e aproveitar. Ótimo ponto de Ipanema para uma excelente experiência no Rio de Janeiro.",
