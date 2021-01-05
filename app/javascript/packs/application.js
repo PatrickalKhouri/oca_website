@@ -39,6 +39,8 @@ import { initMapbox } from '../plugins/init_mapbox';
 
 initMapbox();
 
+import flatpickr from "flatpickr";
+
 
 console.log(formRender)
 console.log("Hello from app/javascript/packs/application.js!");
