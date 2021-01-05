@@ -49,12 +49,11 @@
     </div>
   </div>
   <div id='flat-booking-dates' data-unavailable="<%= @apartment.unavailable_dates.to_json %>">
-    <% if current_user.id != @apartment.user_id  %>
        <%= simple_form_for([@apartment, @booking]) do |f| %>
            <%= f.input :check_in, as: :string, type: :text %>
            <%= f.input :check_out, as: :string, type: :text %>
            <%= f.submit "Book", class: "btn btn-primary" %>
         <% end %>
-    <% end %>
+
  </div>
 </div>
