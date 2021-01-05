@@ -1,0 +1,13 @@
+<div>
+  <div class="form-group">
+    <div class="input-group mb-2 border-rounded d-block">
+      <%= simple_form_for(@booking, @apartment) do |r| %>
+        <%= r.input :check_in, label: "From:", as: :string, input_html: { id: "check_in" } %>
+        <%= r.input :check_out, label: "To:",  as: :string, input_html: { id: "check_out" } %>
+        <%= r.input :apartment_id, as: :hidden, input_html: { value: @apartment.id } %>
+        <%= r.button :submit, class: "btn btn-warning btn-lg btn-block", value: "Rent for € #{@apartment.price}/day" %>
+      <% end %>
+    </div>
+    <p hidden class="widget-content" data-unavailable="<%= @apartment.unavailable_dates.to_json %>"></p>
+  </div>
+</div>
