@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_04_183052) do
+ActiveRecord::Schema.define(version: 2021_01_05_180457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,19 @@ ActiveRecord::Schema.define(version: 2021_01_04_183052) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "parking_spot", default: 0
     t.index ["condominium_id"], name: "index_apartments_on_condominium_id"
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "apartment_id", null: false
+    t.integer "guests"
+    t.string "check_in"
+    t.string "check_out"
+    t.integer "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["apartment_id"], name: "index_bookings_on_apartment_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "cities", force: :cascade do |t|
@@ -141,6 +154,8 @@ ActiveRecord::Schema.define(version: 2021_01_04_183052) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "apartments", "condominia"
+  add_foreign_key "bookings", "apartments"
+  add_foreign_key "bookings", "users"
   add_foreign_key "condominia", "neighbourhoods"
   add_foreign_key "items", "apartments"
   add_foreign_key "items", "furnitures"

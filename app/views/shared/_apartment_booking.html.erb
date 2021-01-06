@@ -1,0 +1,20 @@
+<div class=booking-form>
+  <h4 id="booking-price">R$ <%=@apartment.price%>,00 por noite</h4>
+  <div class="form-group">
+    <div class="input-group mb-2 border-rounded d-block">
+      <%= simple_form_for([@apartment, @booking,]) do |r| %>
+        <%= r.input :check_in, label: "Check-in:", as: :string, input_html: { id: "check_in" } %>
+        <%= r.input :check_out, label: "Check-out:",  as: :string, input_html: { id: "check_out" } %>
+        <%= r.input :apartment_id, as: :hidden, input_html: { value: @apartment.id } %>
+        <%= r.button :submit, class: "btn btn-outline-warning btn-sm btn-block", value: "Confirmar" %>
+      <% end %>
+    </div>
+    <p hidden class="widget-content" data-unavailable="<%= @apartment.unavailable_dates.to_json %>"></p>
+  </div>
+  <div class="booking-text">
+    <p>Qualquer dúvida entre em contato conosco:</p>
+    <p>Whatsapp: +55 21 9 6701 8835</p>
+    <p>Telefone +55 21 9 6701 8835 | +55 21 9 8741 7154</p>
+    <p>Estamos ligados 24 horas por dia, 7 dias por semana =)</p>
+  </div>
+</div>

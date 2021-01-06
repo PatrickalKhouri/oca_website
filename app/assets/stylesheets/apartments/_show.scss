@@ -10,9 +10,58 @@
   font-weight: bold;
 }
 
+#booking-price{
+  font-family: "Lora";
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
+
+}
+
+.form-group btnC{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
+}
+
+.apartment-info h3{
+  font-family: "Lora";
+}
+
+.split-page-left {
+  width: 70%;
+}
+
+.booking-text p {
+  line-height: normal;
+}
+
+.split-page-right {
+  width: 30%;
+}
+
+#booking {
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+.booking-form{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+
 .apartment-show h5 {
   margin-bottom: 15px;
 }
+
+.input-group {
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(220,220,220);
+} 
 
 .apartment-info-images {
   display: flex;
