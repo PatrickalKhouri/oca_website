@@ -79,7 +79,7 @@ the_space: "Decorado com cores em tons pastel, refletem a leveza de um apartamen
 transportation: "Morar em Copacabana é sinônimo de não se preocupar com transporte. O serviço público é sem igual em relação a outros pontos da cidade. É possível se deslocar fácil, com simplicidade e rapidez.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cafeteira Nespresso, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso Vinílico, Toalhas e Lençóis",
 hasnt: "Banheira, Cabides, Churrasqueira, Cooktop Elétrico, Elevador, Espaço pronto para uso de notebook, Ferro de Passar, Frigobar, Jacuzzi, Lareira, Piano, Piscina, Piso de Madeira, Púlpito para casamentos, TV, TV a cabo, Varanda, Wi-fi",
-active: true , oca_id: "033")
+active: true , oca_id: "033", neighbourhood: "Copacabana")
 copa_paranhos.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_paranhos', 'Foto_1.jpg')), filename: 'Copa Paranhos Foto 1.jpg')
 copa_paranhos.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_paranhos', 'Foto_2.jpg')), filename: 'Copa Paranhos Foto 2.jpg')
 copa_paranhos.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_paranhos', 'Foto_3.jpg')), filename: 'Copa Paranhos Foto 3.jpg')
@@ -96,7 +96,7 @@ Também está disponível um TV, Internet e ar condicionado..",
 transportation: "Perto do metrô, apenas 5 minutos caminhando. Você pode praticamente ir e voltar de qualquer lugar da cidade de ônibus. Se precisar de um taxi ou Uber, eles podem parar em frente ao edifício.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Geladeira, Louças e talheres, Microondas, Toalhas e Lençóis, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "009")
+active: true , oca_id: "009", neighbourhood: "Copacabana")
 copa_beach.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_beach', 'Foto_1.jpg')), filename: 'Copa Beach Foto 1.jpg')
 
 copa_cupuacu = Apartment.create(name: "Copacabana Cupuaçu", condominium: atlantica_3958, number: "1006", price: 300, m2: 90, room: 3, guest: 6, bed: 5, bathroom: 2, pet_friendly: false,
@@ -105,7 +105,7 @@ the_space: "COPACABANA CUPUAÇU é um espaçoso apartamento de três quartos na 
 transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam por aqui ônibus para qualquer ponto do Rio de Janeiro, assim como também conta com algumas estações de metrô. É bem simples se movimentar, e quando necessário, solicitar um táxi ou transporte por aplicativo.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Geladeira, Máquina de Lavar, Microondas, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "054")
+active: true , oca_id: "054", neighbourhood: "Copacabana")
 copa_cupuacu.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_cupuacu', 'Foto_1.jpg')), filename: 'Copa Cupuaçu Foto 1.jpg')
 
 copa_pitanga = Apartment.create(name: "Copacabana Pitanga", condominium: nossa_senhora_1292 , number: "602", price: 230, m2: 77, room: 2, guest: 4, bed: 3, bathroom: 2, pet_friendly: false,
@@ -114,7 +114,7 @@ the_space: "Apartamento simples e confortável em uma excelente localização do
 transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam por aqui ônibus para qualquer ponto do Rio de Janeiro, assim como também conta com algumas estações de metrô. É bem simples se movimentar, e quando necessário, solicitar um táxi ou transporte por aplicativo.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Microondas, Piso de Madeira, Toalhas e Lençóis, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "059")
+active: true , oca_id: "059", neighbourhood: "Copacabana")
 copa_pitanga.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_pitanga', 'Foto_1.jpg')), filename: 'Copa Pitanga Foto 1.jpg')
 
 copa_ieda = Apartment.create(name: "Copacabana Ieda", condominium: nossa_senhora_750 , number: "608", price: 150, m2: 77, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
@@ -123,7 +123,7 @@ the_space: "Apartamento todo reformado para locação por temporada. Cama grande
 transportation: "Copacabana é o bairro de melhor locomoção da cidade. Passam por aqui ônibus para qualquer ponto do Rio de Janeiro, assim como também conta com algumas estações de metrô. É bem simples se movimentar, e quando necessário, solicitar um táxi ou transporte por aplicativo.",
 has: "Ar condicionado, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "024")
+active: true , oca_id: "024", neighbourhood: "Copacabana")
 copa_ieda.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'copa_ieda', 'Foto_1.jpg')), filename: 'Copa Ieda Foto 1.jpg')
 
 leblon_caja = Apartment.create(name: "Leblon Cajá", condominium: timoteo_da_costa_541 , number: "407", price: 250, m2: 28, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
@@ -132,7 +132,7 @@ the_space: "Aconchegante apartamento em rua tranquila do Alto Leblon. Quarto con
 transportation: "Leblon Cajá fica no Alto Leblon, região mais residencial do bairro. O ideal é estar disposto a caminhar 5 minutinhos para chegar ao centro do bairro. Também é possível se locomover via táxi ou transporte por aplicativo com facilidade.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Espaço pronto para uso de notebook, Frigobar, Louças e talheres, Toalhas e Lençóis, TV, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "060")
+active: true , oca_id: "060", neighbourhood: "Leblon")
 leblon_caja.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'leblon_caja', 'Foto_1.jpg')), filename: 'Leblon Cajá Foto 1.jpg')
 
 leblon_physalis = Apartment.create(name: "Leblon Physallis", condominium: visconde_de_albuquerque_444 , number: "304", price: 370, m2: 98, room: 1, guest: 2, bed: 1, bathroom: 1,  pet_friendly: false,
@@ -141,7 +141,7 @@ the_space: "O ambiente é sensacional. Sala de estar hiper charmosa com uma pequ
 transportation: "Leblon Physalis fica em um local de fácil acesso, próximo ao metrô e pontos de ônibus, em 5 minutos a pé. Também é possível se locomover via taxi ou transporte por aplicativo com facilidade. Podemos ajudar com qualquer necessidade.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Banheira, Blackout nas cortinas, Box blindex, Cabides, Cafeteira Nespresso, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "052")
+active: true , oca_id: "052", neighbourhood: "Leblon")
 leblon_physalis.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'leblon_physalis', 'Foto_1.jpg')), filename: 'Leblon Physalis Foto 1.jpg')
 
 leblon_timoteo = Apartment.create(name: "Leblon Timóteo", condominium: timoteo_da_costa_82 , number: "302", price: 400, m2: 100, room: 2, guest: 4, bed: 2, bathroom: 2, pet_friendly: false,
@@ -150,7 +150,7 @@ the_space: "Apartamento de dois quartos, decorado de forma suave. Sala de estar 
 transportation: "Leblon Timóteo fica em um local de fácil acesso, próximo ao metrô e pontos de ônibus, em 5 minutos a pé. O ideal é estar disposto a caminhar 5 minutinhos para chegar ao centro do bairro. Também é possível se locomover via taxi ou transporte por aplicativo com facilidade. Podemos ajudar com qualquer necessidade.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Box blindex, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "032")
+active: true , oca_id: "032", neighbourhood: "Leblon")
 leblon_timoteo.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'leblon_timoteo', 'Foto_1.jpg')), filename: 'Leblon Physalis Foto 1.jpg')
 
 ipanema_jangadeiro = Apartment.create(name: "Ipanema Jangadeiro", condominium: jangadeiros_40, number: "803", price: 170, m2: 90, room: 1, guest: 3, bed: 2, bathroom: 1,  pet_friendly: false,
@@ -161,7 +161,7 @@ the_space: "Apto duplex, tipo studio, com pé direito duplo na sala e charmoso t
 transportation: " ",
 has: "Água quente, Ar condicionado, Box blindex, Cabides, Elevador, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Microondas, Piso de Madeira, Toalhas e Lençóis, TV a cabo, Varanda",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "027")
+active: true , oca_id: "027", neighbourhood: "Ipanema")
 ipanema_jangadeiro.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'ipanema_jangadeiro', 'Foto_1.jpg')), filename: 'Ipanema Jangadeiro Foto 1.jpg')
 
 ipanema_cupuacu = Apartment.create(name: "Ipanema Cupuaçu", condominium: antonio_parreiras_25 , number: "306", price: 150, m2: 71, room: 2, guest: 2, bed: 1, bathroom: 2,  pet_friendly: true,
@@ -170,7 +170,7 @@ the_space: "O ambiente é simples, porém aconchegante. Conta com sofá, mesa de
 transportation: "O apartamento fica muito próximo a uma estação de metrô (General Osório) e a diversos pontos de ônibus. Também conta com uma vaga de garagem, caso tenha carro ou alugue algum. O acesso é muito fácil para qualquer parte da cidade, sem dores de cabeça.",
 has: "Água quente, Ar condicionado, Cabides, Espaço pronto para uso de notebook, Ferro de Passar, Fogão, Forno, Frigobar, Louças e talheres, Máquina de Lavar, Microondas, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "030")
+active: true , oca_id: "030", neighbourhood: "Ipanema")
 ipanema_cupuacu.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'ipanema_cupuacu', 'Foto_1.jpg')), filename: 'Ipanema Cupuaçu Foto 1.jpg')
 
 botafogo_real = Apartment.create(name: "Botafogo Real", condominium: real_grandeza_96 , number: "702", price: 200 , m2: 70, room: 2, guest: 4, bed: 2, bathroom: 2,  pet_friendly: false,
@@ -179,7 +179,7 @@ the_space: "Sala bem decorada e iluminada com dois ambientes e ar condicionado. 
 transportation: "BOTAFOGO REAL está a 15 minutos a pé do metrô de Botafogo, que te leva rapidamente para qualquer lugar da cidade. Próximo as ruas principais do bairro, onde se encontram pontos de ônibus com extrema facilidade. Também é possível utilizar com tranquilidade serviços de transporte por aplicativo.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Blackout nas cortinas, Box blindex, Cabides, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Máquina de Lavar, Microondas, Toalhas e Lençóis, TV, Varanda.",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "064")
+active: true , oca_id: "064", neighbourhood: "Botafogo")
 botafogo_real.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'botafogo_real', 'Foto_1.jpg')), filename: 'Botafogo Real Foto 1.jpg')
 
 botafogo_lima = Apartment.create(name: "Botafogo Lima ", condominium: carlos_peixoto_80 , number: "107", price: 220 , m2: 97, room: 2, guest: 3, bed: 2, bathroom: 3,  pet_friendly: false,
@@ -188,7 +188,7 @@ the_space: "Este apartamento foi mobiliado especialmente para locação por temp
 transportation: "BOTAFOGO LIMA fica próximo a pontos de ônibus que interligam toda a cidade. É possível caminhar um pouco e já estar em Copacabana, próximo ao metrô da Cardeal Arcoverde, como também é possível caminhar um pouco e ir em direção ao metrô de Botafogo, que te leva rapidamente para qualquer lugar da cidade. É próximo as ruas principais do bairro, e a Praia de Botafogo. Também é possível utilizar com tranquilidade serviços de transporte por aplicativo. Contudo, se houver a possibilidade de utilizar um carro alugado ou particular, o transporte é facilitado.",
 has: "Água quente, Ar condicionado, Armário de Cozinha, Armários embutidos no quarto, Box blindex, Cabides, Espaço pronto para uso de notebook, Fogão, Forno, Geladeira, Louças e talheres, Piso de Madeira, Toalhas e Lençóis, TV, TV a cabo, Varanda, Wi-fi",
 hasnt: "Armários embutidos no quarto, Banheira, Blackout nas cortinas, Cafeteira Nespresso, Churrasqueira, Cooktop Elétrico, Elevador, Forno, Frigobar, Jacuzzi, Lareira, Máquina de Lavar, Piano, Piscina, Piso de Madeira, Piso Vinílico, Púlpito para casamentos, Varanda",
-active: true , oca_id: "047")
+active: true , oca_id: "047", neighbourhood: "Botafogo")
 botafogo_lima.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'apartments', 'botafogo_lima', 'Foto_1.jpg')), filename: 'Botafogo Lima Foto 1.jpg')
 
 puts "apartments created!!!"
