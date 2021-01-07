@@ -3,7 +3,16 @@ class ApartmentsController < ApplicationController
 
   def index
     # @apartments = Apartment.all
-    @apartments = policy_scope(Apartment)
+    if params[:neighbourhood]
+      @apartments_no_filter = policy_scope(Apartment)
+      if @apartments_no_filter.where(neighbourhood: params[:neighbourhood]).count >= 1
+        @apartments = @apartments_no_filter.where(neighbourhood: params[:neighbourhood])
+      else
+        @apartments = policy_scope(Apartment)
+      end
+    else
+      @apartments = policy_scope(Apartment)
+    end
   end
 
   def show
