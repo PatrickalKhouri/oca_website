@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
   #   redirect_to(root_path)
   # end
 
+  helper_method :current_user
+
   private
 
   def skip_pundit?

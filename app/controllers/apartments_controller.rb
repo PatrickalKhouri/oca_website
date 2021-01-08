@@ -25,4 +25,12 @@ class ApartmentsController < ApplicationController
 
     authorize @apartment
   end
+
+  def new
+    @apartment = Apartment.new
+    authorize @apartment
+  end
+
+  def create
+  end
 end
