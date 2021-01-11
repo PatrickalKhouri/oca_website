@@ -1,1 +1,27 @@
-<%="Create a new apartment"%>
+
+<div class="container mt-3">
+  <h5>Novo Apartamento</h5>
+  <div class="mt-5 d-flex justify-content-center flex-column col-8">
+    <%= simple_form_for @apartment  do |f| %>
+      <%= f.input :name, label: "Nome" %> 
+      <%= f.input :oca_id, label: "Id Oca (3 digitos)" %>
+      <%= f.input :price, label: "Preço por noite" %>
+      <%= f.input :condominium, collection: @condominium_address %>
+      <%= f.input :number, label: "Número" %>
+      <%= f.input :neighbourhood, label: "Bairro", collection: @bairros%>
+      <%= f.input :m2, label: "Metros Quadrados" %>
+      <%= f.input :room, label: "Quartos", collection: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] %>
+      <%= f.input :guest, label: "Hospedes", collection: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] %>
+      <%= f.input :bed, label: "Banheiros", collection: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] %>
+      <%#= f.input :pet_friendly, label: "Aceita pets?" %>
+      <%= f.input :description, label: "Descrição" %>
+      <%= f.input :the_space, label: "O espaço" %>
+      <%= f.input :transportation, label: "Transporte" %>
+      <%= f.input :has, label: "Possui" %>
+      <%= f.input :hasnt, label: "Não possui" %>
+      <%#= f.input :photo, as: :file %>
+      <%= f.input :active, label: 'Ativo' %>
+      <%= f.submit class: "btn btn-primary mb-5" %>
+    <% end %>
+  </div>
+</div>

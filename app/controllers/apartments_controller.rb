@@ -29,6 +29,9 @@ class ApartmentsController < ApplicationController
   def new
     @apartment = Apartment.new
     authorize @apartment
+    @bairros =  ["Ipanema", "Leblon", "Copacabana", "Botafogo"]
+    condominium = Condominium.all
+    @condominium_address = condominium.map { |cond| cond.address}
   end
 
   def create
