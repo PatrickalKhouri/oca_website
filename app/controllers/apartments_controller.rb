@@ -29,11 +29,23 @@ class ApartmentsController < ApplicationController
   def new
     @apartment = Apartment.new
     authorize @apartment
-    @bairros =  ["Ipanema", "Leblon", "Copacabana", "Botafogo"]
-    condominium = Condominium.all
-    @condominium_address = condominium.map { |cond| cond.address}
+    neighbourhoods = Neighbourhood.all
+    @bairros = neighbourhoods.map { |neighbourhood| neighbourhood.name }
   end
 
   def create
+    @apartment = Apartment.new(apartment_params)
+    authorize @apartment
+    if @apartment.save
+      redirect_to apartment_path(@apartment.id)
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def apartment_params
+    params.require(:apartment).permit(:name, :oca_id, :m2, :number, :price, :bathroom, :neighbourhood, :condominium_id, :room, :guest, :bed, :description, :the_space, :transportation, :has, :hasnt, :pet_friendly, :active, photos: [])
   end
 end

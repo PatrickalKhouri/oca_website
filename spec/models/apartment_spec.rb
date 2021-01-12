@@ -37,5 +37,23 @@ RSpec.describe Apartment, type: :model do
       has: "test", hasnt: "test", active: true , oca_id: "100", neighbourhood: "Copacabana").save
       expect(apartment).to eq(false) 
     end
+    
+    it "ensures that oca id cant have less than 3 digits" do
+      apartment = Apartment.new( name: "ipa piraja", number: "100", price: 2, m2: 2, room: 3, guest: 6, bed: 5, bathroom: 2, pet_friendly: false , description: "test.", the_space: "test.", transportation: "test.",
+      has: "test", hasnt: "test", active: true , oca_id: "10", neighbourhood: "Copacabana").save
+      expect(apartment).to eq(false) 
+    end
+
+    it "ensures that oca id cant have more than 3 digits" do
+      apartment = Apartment.new( name: "ipa piraja", number: "100", price: 2, m2: 2, room: 3, guest: 6, bed: 5, bathroom: 2, pet_friendly: false , description: "test.", the_space: "test.", transportation: "test.",
+      has: "test", hasnt: "test", active: true , oca_id: "1000", neighbourhood: "Copacabana").save
+      expect(apartment).to eq(false) 
+    end
+
+    it "ensures that oca id has 3 digits" do
+      apartment = Apartment.new( name: "ipa piraja", number: "100", price: 2, m2: 2, room: 3, guest: 6, bed: 5, bathroom: 2, pet_friendly: false , description: "test.", the_space: "test.", transportation: "test.",
+      has: "test", hasnt: "test", active: true , oca_id: "100", neighbourhood: "Copacabana").save
+      expect(apartment).to eq(false) 
+    end
   end
 end

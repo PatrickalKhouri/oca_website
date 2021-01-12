@@ -13,7 +13,9 @@
     <% @apartments.each do |apartment| %>
        <%= link_to apartment_path(apartment) do %>
       <div class="card-trip">
+      <% if cl_image_tag apartment.photos.attached? %>
         <%= cl_image_tag apartment.photos.first.key %>
+      <% end %>
         <div class="card-trip-infos">
           <div>
             <h2><%= apartment.name %></h2>
