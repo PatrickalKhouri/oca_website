@@ -8,4 +8,12 @@ class ApartmentPolicy < ApplicationPolicy
   def show?
     true
   end
+
+  def new?
+    user.admin
+  end
+
+  def create?
+    new?
+  end
 end

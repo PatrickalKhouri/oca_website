@@ -1,1 +1,29 @@
-<%="Create a new apartment"%>
+
+<div class="container mt-3">
+  <h5>Novo Apartamento</h5>
+  <div class="mt-5 d-flex justify-content-center flex-column col-8">
+    <%= simple_form_for @apartment  do |f| %>
+      <%= f.input :name, label: "Nome", error: 'Nome do imóvelga é obrigatório', input_html: { class: 'apartment_form_string' }%> 
+      <%= f.input :oca_id, label: "Id Oca (3 digitos)" %>
+      <%= f.association :condominium, label_method: :address, label: "Endereço (sem o numero do apartamento)"%>
+      <%#= f.input :condominium_id, label: "Endereço (sem número)", collection: , input_html: { class: 'apartment_form_string' } %>
+      <%= f.input :number, label: "Número do apartamento e complemento"%>
+      <%= f.input :price, label: "Preço por noite" %>
+      <%= f.input :neighbourhood, label: "Bairro", collection: @bairros%>
+      <%= f.input :m2, label: "Metros Quadrados" %>
+      <%= f.input :room, label: "Quartos", collection: (0..10).to_a %>
+      <%= f.input :guest, label: "Hospedes", collection: (0..15).to_a %>
+      <%= f.input :bed, label: "Camas", collection: (0..10).to_a %>
+      <%= f.input :bathroom, label: "Banheiros", collection: (0..10).to_a %>
+      <%= f.input :description, label: "Descrição", as: :text, input_html: { class: 'apartment_form_text' } %>
+      <%= f.input :the_space, label: "O espaço", as: :text, input_html: { class: 'apartment_form_text' } %>
+      <%= f.input :transportation, label: "Transporte", as: :text, input_html: { class: 'apartment_form_text' }%>
+      <%= f.input :has, label: "Possui", as: :text, input_html: { class: 'apartment_form_text' } %>
+      <%= f.input :hasnt, label: "Não possui", as: :text, input_html: { class: 'apartment_form_text' } %>
+      <%= f.input :photo, as: :file,  input_html: { multiple: true } %>
+      <%= f.input :pet_friendly, label: "Aceita pets?", input_html: { class: 'apartment_form_boolean' } %>
+      <%= f.input :active, label: 'Ativo', input_html: { class: 'apartment_form_boolean' }, default: true  %>
+      <%= f.submit class: "btn btn-primary mb-5" %>
+    <% end %>
+  </div>
+</div>
