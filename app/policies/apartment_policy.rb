@@ -14,6 +14,14 @@ class ApartmentPolicy < ApplicationPolicy
   end
 
   def create?
-    new?
+    user.admin
+  end
+
+  def edit?
+    user.admin
+  end
+
+  def update?
+    user.admin
   end
 end
