@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     resources :bookings, only: %i[create]
   end
 
+  resources :condominia, only: %i[new create edit update destroy]
+  
   # Navbar pages, contacts, partners and to contact us for new aparments
   get '/anunciar-imoveis', to: 'pages#anunciar'
   get '/parceiros', to: 'pages#parceiros'
