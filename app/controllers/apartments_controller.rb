@@ -51,7 +51,6 @@ class ApartmentsController < ApplicationController
   def update
     authorize @apartment
     @apartment.update(apartment_params)
-
     if @apartment.save
       redirect_to apartment_path(@apartment.id)
     else
