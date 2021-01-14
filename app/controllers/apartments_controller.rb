@@ -1,6 +1,8 @@
 class ApartmentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
+  before_action :set_apartment, only: [:edit, :update, :show]
+
   def index
     # @apartments = Apartment.all
     if params[:neighbourhood]
@@ -16,7 +18,6 @@ class ApartmentsController < ApplicationController
   end
 
   def show
-    @apartment = Apartment.find(params[:id])
     @booking = Booking.new
     @markers = {
       lat: @apartment.condominium.latitude,
@@ -43,7 +44,26 @@ class ApartmentsController < ApplicationController
     end
   end
 
+  def edit
+    authorize @apartment
+  end
+
+  def update
+    authorize @apartment
+    @apartment.update(apartment_params)
+    if @apartment.save
+      redirect_to apartment_path(@apartment.id)
+    else
+      render :edit
+    end
+  end
+
   private
+
+  def set_apartment
+    @apartment = Apartment.find(params[:id])
+  end
+
 
   def apartment_params
     params.require(:apartment).permit(:name, :oca_id, :m2, :number, :price, :bathroom, :neighbourhood, :condominium_id, :room, :guest, :bed, :description, :the_space, :transportation, :has, :hasnt, :pet_friendly, :active, photos: [])

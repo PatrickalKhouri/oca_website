@@ -50,6 +50,11 @@
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
         </div>
       </div>
+      <div class="container" >
+      <% if current_user.admin %>
+        <%= link_to "Editar Imóvel", edit_apartment_path(@apartment.id) , class: "btn btn-primary" %>
+      <% end %>
+      </div>
     </div>
     <div class="split-page-right" id="booking">
       <%= render 'shared/apartment_booking' %>
