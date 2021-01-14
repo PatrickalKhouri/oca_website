@@ -23,6 +23,11 @@
           <li class="nav-item">
             <%= link_to "Contatos", contatos_path, class: "nav-link" %>
           </li>
+        <%if user_signed_in? && current_user.admin? %>
+          <li class="nav-item">
+            <%= link_to "Links Admin", links_path, class: "nav-link" %>
+          </li>
+        <% end %>
         <% if user_signed_in? %>
           <div class="dropdown show">
             <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :bookings, only: %i[create]
   end
 
-  resources :condominia, only: %i[new create edit update destroy]
+  resources :condominia, only: %i[index new create edit update destroy]
   
   # Navbar pages, contacts, partners and to contact us for new aparments
   get '/anunciar-imoveis', to: 'pages#anunciar'
@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get '/parceiros/estudiocachine', to: 'pages#cachine'
   get '/parceiros/brunobou', to: 'pages#bruno_bou'
   get '/contatos', to: 'pages#contatos'
+  get '/links', to: 'pages#admin_links'
 end

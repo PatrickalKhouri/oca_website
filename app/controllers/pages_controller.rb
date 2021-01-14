@@ -18,4 +18,7 @@ class PagesController < ApplicationController
 
   def contatos
   end
+
+  def admin_links
+  end
 end

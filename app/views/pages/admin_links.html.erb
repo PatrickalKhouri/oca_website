@@ -1,0 +1,13 @@
+<% if current_user.admin? %>
+<div class="container">
+  <ul>
+    <li> <%= link_to "Novo Imóvel", new_apartment_path %> </li>
+    <li> <%= link_to "Novo Condominio", new_condominium_path %> </li>
+    <li> <%= link_to "Listagem dos condominios", condominia_path %> </li>
+  </ul>
+</div>
+<% else%>
+<div>
+  <h1>Você não deveria estar aqui!</h1>
+</div>
+<% end %>
