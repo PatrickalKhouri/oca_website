@@ -53,6 +53,11 @@
       <div class="container" >
       <% if current_user.admin %>
         <%= link_to "Editar Imóvel", edit_apartment_path(@apartment.id) , class: "btn btn-primary" %>
+        <%= link_to "Delete #{@apartment.name}",
+            apartment_path(@apartment),
+            method: :delete,
+            data: { confirm: "Are you sure?" },
+            class: "btn btn-primary" %>
       <% end %>
       </div>
     </div>

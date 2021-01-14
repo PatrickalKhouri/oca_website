@@ -1,7 +1,7 @@
 class ApartmentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
-  before_action :set_apartment, only: [:edit, :update, :show]
+  before_action :set_apartment, only: [:edit, :update, :show, :destroy]
 
   def index
     # @apartments = Apartment.all
@@ -56,6 +56,12 @@ class ApartmentsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    authorize @apartment
+    @apartment.destroy
+    redirect_to apartments_path
   end
 
   private
