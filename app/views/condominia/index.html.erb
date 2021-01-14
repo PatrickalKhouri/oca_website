@@ -1,0 +1,9 @@
+<div> 
+  <ul>
+    <% @condominia.each do | condominium | %>
+      <li ><%= condominium.address %>
+        <%= link_to "Editar Condominio", edit_condominium_path(condominium.id) , class: "btn btn-primary button-edit-cond" %>
+      </li>
+    <% end %>
+  </ul>
+</div>

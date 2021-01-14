@@ -2,6 +2,10 @@ class CondominiaController < ApplicationController
 
   before_action :set_condominium, only: [:edit, :update]
 
+  def index
+    @condominia = policy_scope(Condominium)
+  end
+
   def new
     @condominium = Condominium.new
     authorize @condominium
@@ -25,7 +29,7 @@ class CondominiaController < ApplicationController
     authorize @condominium
     @condominium.update(condominium_params)
     if @condominium.save
-      redirect_to root_path
+      redirect_to condominia_path
     else
       render :edit
     end
