@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
   bounds.extend([ markers.lng, markers.lat ]);
-  map.fitBounds(bounds, { padding: 90, maxZoom: 14, duration: 0 });
+  map.fitBounds(bounds, { padding: 90, maxZoom: 13, duration: 0 });
 };
 
 

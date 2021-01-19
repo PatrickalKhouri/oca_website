@@ -37,7 +37,9 @@ document.addEventListener('turbolinks:load', () => {
 
 import { initMapbox } from '../plugins/init_mapbox';
 
-initMapbox();
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})
 
 import flatpickr from 'flatpickr'
 
