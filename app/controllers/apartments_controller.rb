@@ -16,7 +16,7 @@ class ApartmentsController < ApplicationController
       end
     else
       if params[:query].present?
-        @apartments = Apartment.where(name: params[:query])
+        @apartments = Apartment.where("name @@ ?", "%#{params[:query]}%")
       else
         @apartments = policy_scope(Apartment)
       end
