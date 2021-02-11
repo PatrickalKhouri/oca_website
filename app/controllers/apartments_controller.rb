@@ -1,7 +1,7 @@
 class ApartmentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
-  after_action :verify_policy_scoped, :except => :index
+  after_action :verify_policy_scoped, :except => [:index, :show]
 
   before_action :set_apartment, only: [:edit, :update, :show, :destroy]
 
@@ -17,6 +17,14 @@ class ApartmentsController < ApplicationController
     else
       if params[:query].present?
         @apartments = Apartment.where("name @@ ?", "%#{params[:query]}%")
+      else
+        @apartments = policy_scope(Apartment)
+      end
+    end
+    if params[:room]
+      @apartments_no_filter = policy_scope(Apartment)
+      if @apartments_no_filter.where(room: params[:room]).count >= 1
+        @apartments = @apartments_no_filter.where(room: params[:room])
       else
         @apartments = policy_scope(Apartment)
       end

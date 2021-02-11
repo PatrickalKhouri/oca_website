@@ -3,10 +3,10 @@
           Quartos
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">1</a>
-          <a class="dropdown-item" href="#">2</a>
-          <a class="dropdown-item" href="#">3</a>
-          <a class="dropdown-item" href="#">4</a>
-          <a class="dropdown-item" href="#">5</a>
+          <a class="dropdown-item"><%= link_to "1", apartments_path(room: 1), class: "room-filter" %></a>
+          <a class="dropdown-item"><%= link_to "2", apartments_path(room: 2), class: "room-filter" %></a>
+          <a class="dropdown-item"><%= link_to "3", apartments_path(room: 3), class: "room-filter" %></a>
+          <a class="dropdown-item"><%= link_to "4", apartments_path(room: 4), class: "room-filter" %></a>
+          <a class="dropdown-item"><%= link_to "5", apartments_path(room: 5), class: "room-filter" %></a>
         </div>
       </div>
